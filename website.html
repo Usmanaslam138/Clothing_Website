@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="assets/website.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Nav bar -->
+    <div class="nav-container" id="nav-container">
+        <div class="nav-bar">
+            <div class="logo">
+                <p>LOGO</p>
+                <i onclick="document.getElementById('nav-container').style.display='none'" class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="menu">
+                    <a href="#shop">Shirts</a>
+                    <a href="#shop">Dresses</a>
+                    <a id="jeans" onclick="document.getElementById('sub-menu').style.display='block'">Jeans <i class="fa-solid fa-caret-down"></i></a>
+                    <!-- sub-menu open upon click jeans -->
+                    <div class="sub-menu" id="sub-menu">
+                        <a href="#shop" id="skinny"><i class="fa-solid fa-caret-right"></i> Skinny</a>
+                        <a href="#shop">Relaxed</a>
+                        <a href="#shop">Bootcut</a>
+                        <a href="#shop">Straight</a>
+                    </div>
+                    <a href="#shop">Jackets</a>
+                    <a href="#shop">Gymwear</a>
+                    <a href="#shop">Blazers</a>
+                    <a href="#shop">Shoes</a>
+            </div>
+            <div class="contact-menu">
+                <a href="#contact">Contact</a>
+                <a onclick="document.getElementById('pop_up').style.display='block'">Newsletter</a>
+                <a href="#subscribe">Subscribe</a>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Rsponsive menu -->
+    <div class="mobile-nav">
+        <p>LOGO</p>
+        <div onclick="document.getElementById('nav-container').style.display='block'"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <!-- Main website content -->
+    <div class="content-container">
+        <div class="content-nav">
+            <p>Jeans</p>
+            <div class="icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="content-img">
+            <img src="assets/jeans.jpg" alt="Jeans" width="100%">
+        </div>
+        <div class="p">
+            <p>8 Items</p>
+        </div>
+        <div id="shop">
+            <!-- jeans col-1 -->
+            <div class="col-1">
+                <div class="item-1">
+                    <img src="assets/jeans1.jpg" alt="Jeans" width="100%">
+                </div>
+                <p>Ripped Skinny Jeans <br><b>$24.99</b></p>
+                <div class="item-2">
+                    <img src="assets/jeans2.jpg" alt="Jeans" width="100%">
+                </div>
+                <p>Mega Ripped Jeans <br><b>$19.99</b></p>
+            </div>
+            <!-- jeans col 2 -->
+            <div class="col-1">
+                <div class="item-1 new">
+                    <img src="assets/jeans2.jpg" alt="Jeans" width="100%">
+                    <span>New</span>
+                    <button>Buy now <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <p>Mega Ripped Jeans <br><b>$19.99</b></p>
+                <div class="item-2">
+                    <img src="assets/jeans3.jpg" alt="Jeans" width="100%">
+                </div>
+                <p>Washed Skinny Jeans <br><b>$20.5</b></p>
+            </div>
+            <!-- jeans col 3 -->
+            <div class="col-1">
+                <div class="item-1">
+                    <img src="assets/jeans3.jpg" alt="Jeans" width="100%">
+                </div>
+                <p>Washed Skinny Jeans <br><b>$20.5</b></p>
+                <div class="item-2 sale">
+                    <img src="assets/jeans4.jpg" alt="Jeans" width="100%">
+                    <span>Sale</span>
+                    <button>Buy now <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <p>Vintage Skinny Jeans <br><b>$14.99</b></p>
+            </div>
+            <!-- jeans col 4 -->
+            <div class="col-1">
+                <div class="item-1">
+                    <img src="assets/jeans4.jpg" alt="Jeans" width="100%">
+                </div>
+                <p>Vintage Skinny Jeans <br><b>$14.99</b></p>
+                <div class="item-2">
+                    <img src="assets/jeans1.jpg" alt="Jeans" width="100%">
+                </div>
+                <p>Ripped Skinny Jeans <br><b>$24.99</b></p>
+            </div>
+        </div>
+        <div class="subscribe" id="subscribe">
+            <h1>Subscribe</h1>
+            <p>To get special offers and VIP treatment:</p>
+            <input type="text" placeholder="Enter e-mail">
+            <button>Subscribe</button>
+        </div>
+        <div class="about-container" id="contact">
+            <div class="col-1">
+                <h4>Contact</h4>
+                <p>Question? Go ahead.</p>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="Message">
+                <button>Send</button>
+            </div>
+            <div class="col-2">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">We're hiring</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Find store</a></li>
+                    <li><a href="#">Shipment</a></li>
+                    <li><a href="#">Payment</a></li>
+                    <li><a href="#">Gift card</a></li>
+                    <li><a href="#">Return</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h4>Store</h4>
+                <div class="row-1">
+                    <span><i class="fa-solid fa-location-dot"></i> Company Name</span>
+                    <span><i class="fa-solid fa-phone"></i> 0044123123</span>
+                    <span><i class="fa-solid fa-envelope"></i> ex@mail.com</span>
+                </div>
+                <h4>We accept</h4>
+                <span><i class="fa-brands fa-cc-amex"></i> Amex</span>
+                <span><i class="fa-regular fa-credit-card"></i> Credit card</span>
+                <div class="icon">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-snapchat"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <p>Powered by <a href="#">w3.css</a></p>
+    </div>
+    <!-- pop-up -->
+    <div class="pop-up" id="pop_up">
+        <div class="pop-up-container">
+            <div id="pop-up">
+                <i onclick="document.getElementById('pop_up').style.display='none'" class="fa-solid fa-xmark"></i>
+                <h2>NEWSLETTER</h2>
+                <P>Join our mailing list to receive updates on new arrivals and special offers.</P>
+                <input type="text" placeholder="Enter e-mail">
+                <div><button>Subscribe</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

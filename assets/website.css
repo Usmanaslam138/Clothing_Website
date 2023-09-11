@@ -1,0 +1,469 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+*::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+img{
+    vertical-align: middle;
+}
+body{
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+.nav-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    position: fixed;
+    z-index: 2;
+    max-width: 1200px;
+    top: 0%;
+}
+.nav-container .nav-bar{
+    width: 250px;
+    position: fixed;
+    background-color: white;
+    overflow: auto;
+    margin-bottom:100px ;
+    height: 100vh;
+    padding-bottom: 6px;
+}
+.nav-container .nav-bar .logo{
+    padding: 16px;
+}
+.nav-container .nav-bar .logo p{
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 600;
+    display: inline-block;
+}
+.nav-container .nav-bar .logo i{
+    float: right;
+    display: none;
+    padding: 5px 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.nav-container .nav-bar .logo i:hover{
+    background-color: #c0c0c0;
+    color: black;
+}
+.nav-container .nav-bar .menu{
+    padding: 50px 0 64px 0;
+}
+.nav-container .nav-bar .menu a{
+    width: 100%;
+    display: block;
+    color: black;
+    opacity: 0.7;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.nav-container .nav-bar .menu #jeans{
+    opacity: 1;
+}
+.nav-container .nav-bar .menu .sub-menu{
+    font-size: 15px;
+    padding: 12px 24px;
+    display: none;
+}
+.nav-container .nav-bar .menu .sub-menu #skinny{
+    opacity: 1;
+    background-color: #f1f1f1;
+}
+.nav-container .nav-bar .menu a:hover{
+    background-color: #c0c0c0;
+    opacity: 1;
+}
+.nav-container .nav-bar .menu .sub-menu #skinny:hover{
+    background-color: #c0c0c0;
+}
+.nav-container .nav-bar .contact-menu a{
+    width: 100%;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.nav-container .nav-bar .contact-menu a:hover{
+    background-color: #c0c0c0;
+}
+/* for mobile and tablets */
+.mobile-nav{
+    box-sizing: border-box;
+    width: 99.99%;
+    max-width: 1200px;
+    background-color: black;
+    color: white;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    padding: 0 5px;
+    position: fixed;
+    display: none;
+    overflow: hidden;
+}
+.mobile-nav p{
+    display: inline-block;
+    font-size: 24px;
+    padding: 24px 12px;
+}
+.mobile-nav div{
+    float: right;
+    padding: 25px 12px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    align-self: stretch;
+}
+.mobile-nav div:hover{
+    background-color: #c0c0c0;
+    color: black;
+}
+.content-container{
+    margin-left: 250px;
+    transition: margin-left 0.5s ease;
+}
+.content-container .content-nav{
+    padding: 0 16px;
+
+}
+.content-container .content-nav p{
+    display: inline-block;
+    font-size: 24px;
+    margin: 24px 0;
+}
+.content-container .content-nav .icons{
+    float: right;
+    color: black;
+    font-size: 22px;
+    margin: 24px 10px;
+}
+.content-container .content-nav .icons i{
+    padding: 0 6px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.content-container .content-nav .icons i:hover{
+    opacity: 0.7;
+    color: rgba(0, 0, 0, 0.712);
+}
+.content-container .content-img{
+    padding: 0 16px;
+}
+.content-container .p{
+    padding: 0 16px;
+}
+.content-container .p p{
+    margin: 20px 0 0 0;
+}
+.content-container #shop{
+    padding: 10px 0;
+}
+.content-container #shop img{
+    filter: grayscale(75%);
+}
+.content-container #shop .col-1{
+    padding: 0 16px;
+    width: 24.99%;
+    float: left;
+} 
+.content-container #shop .col-1 .item-1, .content-container #shop .col-1 .item-2{
+    margin: 15px 0;
+}
+.content-container #shop .col-1 .new, .content-container #shop .col-1 .sale{
+    position: relative;
+}
+.content-container #shop .col-1 .new span, .content-container #shop .col-1 .sale span{
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 2px 10px;
+}
+.content-container #shop .col-1 .new button, .content-container #shop .col-1 .sale button{
+    display: none;
+    padding: 8px 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.content-container #shop .col-1 .new:hover button, .content-container #shop .col-1 .sale:hover button{
+    display: block;
+}
+.content-container #shop .col-1 .new button:hover, .content-container #shop .col-1 .sale button:hover{
+    background-color: #c0c0c0;
+    color: black;
+}
+.content-container .subscribe{
+    padding: 32px 16px;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+.content-container .subscribe h1{
+    font-size: 36px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+.content-container .subscribe p{
+    margin: 15px 0;
+}
+.content-container .subscribe input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+}
+.content-container .subscribe button{
+    margin: 20px 0;
+    width: 120px;
+    border: none;
+    background-color: rgb(243, 35, 35);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.content-container .subscribe button:hover{
+    background-color: #c0c0c0;
+    color: black;
+}
+.content-container .about-container{
+    background-color: #efefef;
+    padding: 60px 18px;
+}
+.content-container .about-container .col-1, .content-container .about-container .col-2, .content-container .about-container .col-3{
+    width: 33.33%;
+    float: left;
+    padding: 0 10px;
+}
+.content-container .about-container .col-1 h4, .content-container .about-container .col-2 h4, .content-container .about-container .col-3 h4{
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.content-container .about-container .col-1 p{
+    margin: 15px 0;
+    font-weight: 15px;
+    text-align: center;
+}
+.content-container .about-container .col-1 input{
+    width: 100%;
+    border: none;
+    padding: 12px 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+.content-container .about-container .col-1 button{
+    width: 100%;
+    padding: 12px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 4px;
+}
+.content-container .about-container .col-1 button:hover{
+    background-color: #c0c0c0;
+    color: black;
+}
+.content-container .about-container .col-2 ul li{
+    list-style-type: none;
+    color: black;
+}
+.content-container .about-container .col-2 ul li a{
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    margin: 8px 0;
+}
+.content-container .about-container .col-3 h4{
+    text-align: left;
+}
+.content-container .about-container .col-3 span{
+    display: block;
+    font-size: 12px;
+    margin: 10px 0;
+}
+.content-container .about-container .col-3 .row-1 span .fa-solid, .content-container .about-container .col-3 span .fa-brands, .content-container .about-container .col-3 span .fa-regular{
+    margin-right: 10px;
+}
+.content-container .about-container .col-3 .icon a{
+    display: inline-block;
+    color: black;
+}
+.content-container .about-container .col-3 .icon a:hover{
+    opacity: 0.8;
+    color: rgba(0, 0, 0, 0.811);
+}
+.footer{
+    padding: 24px 0;
+    background-color: black;
+    text-align: center;
+    margin-left: 250px;
+}
+.footer p{
+    color: white;
+}
+.footer p a{
+    color: white;
+}
+.pop-up{
+    display: none;
+    padding-top: 140px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.677);
+}
+.pop-up .pop-up-container{
+    margin:  auto;
+    padding: 32px;
+    width: 900px;
+    background-color: white;
+    color: black;
+    max-width: 1200px;
+    animation: subscribe 1s;
+}
+.pop-up .pop-up-container #pop-up{
+    padding: 0 16px;
+    text-align: center;
+}
+.pop-up .pop-up-container #pop-up h2{
+    display: inline-block;
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.pop-up .pop-up-container #pop-up i{
+    font-size: 24px;
+    float: right;
+    padding: 5px;
+    cursor: pointer;
+}
+.pop-up .pop-up-container #pop-up i:hover{
+    background-color: #c0c0c0;
+}
+.pop-up .pop-up-container #pop-up p{
+    margin: 15px 0;
+    text-align: center;
+}
+.pop-up .pop-up-container #pop-up input{
+    border: 1px solid #c0c0c0;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+}
+.pop-up .pop-up-container #pop-up div{
+    width: 100%;
+    text-align: center;
+}
+.pop-up .pop-up-container #pop-up button{
+    background-color: red;
+    color: white;
+    padding: 12px 24px;
+    margin: 16px 0;
+    border: none;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.pop-up .pop-up-container #pop-up button:hover{
+    color: black;
+    background-color: #c0c0c0;
+}
+::-webkit-scrollbar{
+    width: 2px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to left, #e6dada, #274046);
+}
+@media only screen and (max-width: 980px){
+    .content-container #shop .col-1{
+        width: 49.99%;
+    }
+    .nav-container{
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+    .nav-container .nav-bar .logo i{
+        display: block;
+    }
+    .nav-container .nav-bar{
+        animation: popup 1s ease;
+    }
+    .mobile-nav{
+        display: block;
+    }
+    .content-container{
+        margin-left: 0%;
+        transition: margin-left 0.5s ease;
+    }
+    .content-container .content-nav{
+        margin-top: 83px;
+    }
+    .footer{
+        margin-left: 0;
+        transition: margin-left 0.5s ease;
+    }
+    .pop-up .pop-up-container{
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .pop-up .pop-up-container{
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .pop-up .pop-up-container{
+        width: 90%;
+    }
+}
+@keyframes popup{
+    0%{margin-left:-200px;}
+    100%{margin-left:0;}
+}
+@keyframes subscribe{
+    0%{opacity:0;}
+    100%{opacity: 1;}
+}
